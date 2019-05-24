@@ -1,0 +1,139 @@
+$bodyFont: 'Raleway', sans-serif;
+$headingFont: 'Open Sans', sans-serif;
+
+//Colors
+$bgColor: #ECEFF0;
+$priColor: #184D7B;
+$secColor: #009ad7;
+$viberColor: #675AAA;
+$priTextColor: #3C3C3C;
+$secTextColor: #707070;
+$facebookColor: #3B5998;
+
+//heights
+$siteHeader: 70px;
+
+
+body {
+  font-family: $bodyFont;
+  font-size: 20px;
+  font-weight: 300;
+  background: $bgColor;
+  color: $priTextColor;
+  margin-top:$siteHeader;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headingFont;
+  font-weight: 600;
+  color: $priColor;
+  a, a:visited, a:hover, a:focus {
+    color: $priColor;
+  }
+}
+
+a, a:visited, a:hover, a:focus {
+  color: $secColor;
+}
+
+.img-responsive {
+  height: 100%;
+}
+
+// burger menu
+.burger-menu {
+  padding: .5rem;
+  cursor: pointer;
+  .bar-1, .bar-2, .bar-3 {
+    width: 30px;
+    height: 5px !important;
+    background: $priColor;
+    margin: 3px 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
+.change {
+  .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .bar-2 {
+    opacity: 0;
+  }
+  .bar-3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+
+.btn-main {
+  display: block;
+  font-size: 1.25rem;
+  padding: .75rem;
+  margin: 1.25rem 0;
+  text-transform: uppercase;
+  font-family: $headingFont;
+  color: white !important;
+  background: $secColor;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: -5px 5px 6px rgba(#000, 0.16);
+  i {
+    position: absolute;
+    top: 0.5rem;
+    left: 10px;
+  }
+}
+.btn-main:hover {
+  top: -2px;
+  left: 2px;
+  box-shadow: -7px 7px 6px rgba(#000, 0.16);
+}
+.btn-main:focus {
+  top: 3px;
+  left: -3px;
+  box-shadow: -2px 2px 6px rgba(#000, 0.16);
+}
+.btn-blyss {
+  background: $secColor;
+  color: #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem   ;
+}
+.btn-blyss:hover {
+  border: solid 1px #A52902;
+}
+.btn-viber {
+  background: $viberColor;
+}
+
+.search-form {
+  input {
+    border: 1px solid rgba($priColor, 0.5);
+  }
+  button {
+    margin-left: 0.625rem;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba($priColor, .25);
+  border-color: $priColor;
+}
+
+.btn-search {
+  background-color: $priColor;
+}
+.btn-search:hover {
+  border: solid 1px $priColor;
+}
+
+

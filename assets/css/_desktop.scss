@@ -1,0 +1,225 @@
+@media (min-width: 992px) {
+  body {
+    margin-top: $siteHeader*2.286;
+  }
+  //HEADER STYLE
+  header.site-header{
+    height: $siteHeader*2.286;
+    .hd-up-row {
+      height: 80px;
+      .hd-information{
+        text-align: right;
+        font-size: 0.875rem;
+        color: $secTextColor;
+        p {
+          margin: 0;
+        }
+        a {
+          color: $secTextColor;
+        }
+      }
+    }
+    .hd-down-row {
+      flex-direction: row-reverse;
+      padding-top: 0.625rem;
+      //align-items: center;
+      .hd-search {
+        padding-top: 5px;
+        flex-grow: 1;
+        margin-left: 0.625rem;
+      }
+      .menu-container {
+        margin: 0;
+        flex-grow: 1;
+      }
+      .main-nav-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        li {
+          a, a:visited {
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .header-small {
+    height: 80px !important;
+    .row {
+      position: relative;
+      .hd-information {
+        display: none !important;
+      }
+      .hd-up-row {
+        img {
+          height: 60px;
+        }
+      }
+      .hd-down-row {
+        position: absolute;
+        top: 20px;
+        .hd-search {
+          display: none;
+        }
+        .menu-glavni-meni-container {
+          margin-left: auto;
+          width: 700px;
+        }
+      }
+    }
+  }
+
+  /**
+PAGES STYLE
+ */
+  // General
+  section {
+    padding-bottom: 1rem;
+  }
+  #primary {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  #home {
+    padding-bottom: 3rem;
+  }
+  .hero {
+    padding-top: 9.375rem;
+    padding-bottom: 9.375rem;
+    .btn-main {
+      display: inline-block;
+      width: 47%;
+    }
+    .btn-main:first-child {
+      margin-right: 0.625rem;
+    }
+    .btn-viber {
+      text-align: right;
+      padding-right: 1.5rem;
+    }
+  }
+  .about {
+    padding-top: 0 !important;
+  }
+  .services {
+    padding-top: 3rem;
+    padding-bottom: 1rem !important;
+  }
+  .cta {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    p {
+      margin: 0;
+    }
+  }
+  .btn-card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
+  }
+  .blyss-item-card {
+    padding: 2rem 0.975rem;
+  }
+  .offer {
+    padding-top: 5rem;
+    .blyss-tr-card {
+      .card-data {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .spec {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  #ctaRegister, #ctaContact {
+    .modal-dialog {
+      max-width: 768px;
+    }
+  }
+
+  //Category pages
+  .page-title {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .blyss-category {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  /**
+  CONTACT PAGE
+ */
+  .contact-details {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .work-addresses {
+      h4 {
+        margin-top: 0;
+      }
+    }
+  }
+  .contact-form {
+    padding-top: 4rem;
+    input[type="submit"] {
+      width: unset;
+    }
+  }
+  .contact-map {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  /**
+  404
+   */
+  .blyss-404 {
+    p,
+    h1 {
+      text-align: left;
+    }
+    .col-sm-2 {
+      display: block;
+      margin-bottom: 0;
+      div:first-child {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  // SINGLE POST
+  .blyss-article {
+    margin-top: 4rem;
+    section {
+      padding: 0;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .blyss-gallery {
+    .tumb-img {
+      .blyss-thumbnail {
+        width: 22%;
+      }
+    }
+  }
+
+  // Footer style
+  .site-footer {
+
+    .footer-logo {
+
+      img {
+        height: 80px;
+        width: auto;
+      }
+    }
+    .footer-address {
+      margin: 0;
+    }
+  }
+}
