@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for "Ponuda"
+ * Template part for Category "Ponuda"
  */
 
 $cat_args = [
